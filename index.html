@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/index.js"></script>
+
+<body class="bg-slate-900">
+    <div class="md:flex items-center md:justify-center h-screen content-center">
+        <div class="bg-white font-semibold rounded-3xl shadow-lg p-10 md:mr-4 mb-5 md:mb-0 bg-slate-800 md:text-center">
+            <h2 class="text-sky-500 text-sm font-light mb-4">Select a famous person</h2>
+            <div class="flex items-center justify-center flex-wrap md:inline-block">
+                <button
+                    class="bg-sky-500 hover:bg-sky-600 text-sm px-8 py-2 mb-2 rounded-3xl block text-gray-100 font-light uppercase tracking-wide"
+                    onclick="javascript:onClickPersonButton(1)">Bill Gates</button>
+                <button
+                    class="bg-sky-500 hover:bg-sky-600 text-sm px-8 py-2 mb-2 rounded-3xl block text-gray-100 font-light uppercase tracking-wide"
+                    onclick="javascript:onClickPersonButton(2)">Steve Jobs</button>
+                <button
+                    class="bg-sky-500 hover:bg-sky-600 text-sm px-8 py-2 mb-2 rounded-3xl block text-gray-100 font-light uppercase tracking-wide"
+                    onclick="javascript:onClickPersonButton(3)">Linus Torvalds</button>
+                <button
+                    class="bg-sky-500 hover:bg-sky-600 text-sm px-8 py-2 mb-2 rounded-3xl block text-gray-100 font-light uppercase tracking-wide"
+                    onclick="javascript:onClickPersonButton(4)">Arthur Clarke</button>
+                <button
+                    class="bg-sky-500 hover:bg-sky-600 text-sm px-8 py-2 mb-2 rounded-3xl block text-gray-100 font-light uppercase tracking-wide"
+                    onclick="javascript:onClickPersonButton(5)">Tim Berners-Lee</button>
+            </div>
+        </div>
+        <div class="bg-white font-semibold text-center rounded-3xl shadow-lg p-10 bg-slate-800 hidden" id="card_quote">
+            <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" id="img_person"
+                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+            <h1 class="text-lg text-sky-500" id="txt_name"></h1>
+            <p class="text-xs text-gray-400 mt-4" id="txt_quote"></p>
+            <button class="bg-indigo-600 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide"
+                onclick="javascript:onClickGetQuote()">Get Quote</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
